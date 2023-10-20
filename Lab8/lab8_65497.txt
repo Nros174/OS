@@ -1,0 +1,18 @@
+q2
+READ from mem:
+DATA wrtten to mem:
+q3
+successfully obtain ppid
+ppid = 398,Btw SIGUSR1 = 10
+waiting for SIG before written to server
+Clnt write to mem & notify: os kmilt
+q4
+[1] 1062
+q5.1
+/*a*/ shmid = shmget(IPC_PRIVATE,sizeof(int),0666|IPC_CREAT);
+q5.2
+count = (int*) shmat(shmid,NULL,0);
+q5.3
+child decrements value at 0x7ffffd57b390
+parent increment value at 0x7ffffd57b390
+final answer is 6
